@@ -30,6 +30,7 @@ function List() {
                 {list.map((item, index) => (
                     <Col key={index}>
                         <ListCard
+                            link={item.link}
                             image={item.image}
                             title={item.title.replace(/[<b></b>]/g, '')}
                             price={item.lprice}
