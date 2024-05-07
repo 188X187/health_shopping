@@ -1,10 +1,10 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-import TopTab from './components/CartTab';
-
+import './App.css';
+import Cart from './pages/Cart';
 
 function App() {
   return (
-    <TopTab/>
+    <Cart />
   );
 }
 
