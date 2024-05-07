@@ -7,8 +7,8 @@ import ListCard from './ListCard'
 function Home(){
     return(
         <Stack gap={3}>
-            <div className="p-2"><GlobalNav /></div>
-            <div className="p-2"><List /></div>
+            {/* <div className="p-2"><GlobalNav /></div> */}
+            {/* <div className="p-2"><List /></div> */}
             <div className="p-2">Third item</div>
         </Stack>
     )
