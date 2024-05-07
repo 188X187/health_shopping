@@ -1,10 +1,15 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
-import Cart from './pages/Cart';
+import List from './pages/List';
+import ListCard from './pages/ListCard';
+
+import Layout from './layout/Layout';
 
 function App() {
   return (
-    <Cart />
+    <div className="App">
+      <Layout />
+    </div>
   );
 }
 
