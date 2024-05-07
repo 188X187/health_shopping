@@ -5,6 +5,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Offcanvas from 'react-bootstrap/Offcanvas';
+import Search from '../search/Searching';
 
 function GlobalNav() {
     return (
@@ -42,15 +43,7 @@ function GlobalNav() {
                                         </NavDropdown.Item>
                                     </NavDropdown>
                                 </Nav>
-                                <Form className="d-flex">
-                                    <Form.Control
-                                        type="search"
-                                        placeholder="Search"
-                                        className="me-2"
-                                        aria-label="Search"
-                                    />
-                                    <Button variant="outline-success">Search</Button>
-                                </Form>
+                                <Button variant="outline-success" href='search'>Search</Button>
                             </Offcanvas.Body>
                         </Navbar.Offcanvas>
                     </Container>
