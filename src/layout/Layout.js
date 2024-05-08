@@ -4,6 +4,8 @@ import Searching from "../components/search/Searching"
 import { Stack } from "react-bootstrap"
 import GlobalNav from "../components/common/GlobalNav"
 import Filter from "../components/search/Filter"
+import CartApple from "../components/cart_apple/CartApple"
+import Cart from "../pages/cart"
 
 function Layout() {
     return (
@@ -16,7 +18,7 @@ function Layout() {
                         <Route index element={<Home />}></Route>
                         <Route path="search" element={<Searching />}></Route>
                         <Route path="filter" element={<Filter />}></Route>
-
+                        <Route path="cart" element={<Cart />}></Route>
                     </Routes>
                 </BrowserRouter>
 

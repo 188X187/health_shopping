@@ -1,6 +1,8 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
-import CartApple from './components/cart_apple/CartApple';
+import List from './pages/List';
+import ListCard from './pages/ListCard';
+
 import Layout from './layout/Layout';
 
 function App() {

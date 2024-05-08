@@ -42,7 +42,7 @@ function GlobalNav() {
                                             Something else here
                                         </NavDropdown.Item>
                                     </NavDropdown> */}
-                                    <Nav.Link href="#">Cart</Nav.Link>
+                                    <Nav.Link href="/cart">Cart</Nav.Link>
                                 </Nav>
                                 <Button variant="outline-success" href='search'>Search</Button>
                             </Offcanvas.Body>
