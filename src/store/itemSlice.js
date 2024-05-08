@@ -14,11 +14,11 @@ let item = createSlice({
             state[action.payload].count -= 1
         },
         addItem(state, action){
-            state.push();
+            state.push(action.payload);
         }
     }
 })
 
-export let { increase, decrease } = item.actions
+export let { increase, decrease, addItem } = item.actions
 
 export default item
