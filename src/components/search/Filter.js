@@ -3,13 +3,40 @@ import List from "../../pages/List";
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import Button from 'react-bootstrap/Button';
+import Form from 'react-bootstrap/Form';
 
 function Filter() {
     const [item, setItem] = useState('')
     const [checkbox, setcheckbox] = useState('')
 
+    const [searchItem, setSearchItem] = useState('')
+    const [searchClick, setSearchClick] = useState('')
+
     return (
         <>
+            <Form className="d-flex">
+                <Form.Control
+                    type="search"
+                    placeholder="search"
+                    className="me-2"
+                    aria-label="Search"
+                    onChange={(e) => {
+                        setSearchItem(e.target.value)
+                    }}
+                />
+                <Button variant="outline-success"
+                    onClick={() => {
+                        // 검색칸이 빈칸이면 
+                        if (searchItem == '') {
+                            alert("검색어를 입력해주세요")
+                        } else {
+                            setSearchClick(searchItem)
+                        }
+                    }}
+                >Search</Button>
+            </Form>
+
             <label>
                 <input
                     type="checkbox"
@@ -150,7 +177,7 @@ function Filter() {
                     }}>
                 </input>최신순
             </label>
-            <List item={item} checkbox={checkbox} />
+            <List searchClick={searchClick} item={item} checkbox={checkbox} />
         </>
     )
 }
