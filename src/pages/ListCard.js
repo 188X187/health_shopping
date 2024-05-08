@@ -1,8 +1,7 @@
-import { Button, Card } from "react-bootstrap";
+import { Button, Card, ListGroup } from "react-bootstrap";
 import { useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
 import { addItem } from "../store/itemSlice";
-import InfoPages from "../informations/InfoPages1";
 
 function ListCard(props) {
 
@@ -13,21 +12,26 @@ function ListCard(props) {
             <Link to="/infoPages" state={{item: props.item}}>
             <Card.Img variant="top" src={props.image} style={{ height: '15rem' }} />
             </Link>
-            <Card.Body style={{height: '14.5rem'}}>
+            <Card.Body>
                 <Link to='/infoPages' state={{item: props.item}}>
                 <Card.Title>{props.title}</Card.Title>
-                <Card.Text>{props.price}원</Card.Text>
                 </Link>
-                <Button variant="primary" onClick={()=>{
+                    </Card.Body>
+
+                <ListGroup className="list-group-flush">
+                    <ListGroup.Item>{props.price}원</ListGroup.Item>
+                <ListGroup.Item variant="success" onClick={()=>{
                     dispatch(addItem({
                         title:props.title,
                         image:props.image,
                         link:props.link,
                         lprice:props.price
-                        }))}}>장바구니</Button>
-            </Card.Body>
+                        }))
+                        alert('장바구니에 담겼습니다')}}>장바구니</ListGroup.Item>
+                </ListGroup>
         </Card>
     )
 }
+
 
 export default ListCard;
