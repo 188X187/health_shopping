@@ -28,12 +28,11 @@ function GlobalNav() {
                             <Offcanvas.Body>
                                 <Nav className="justify-content-end flex-grow-1 pe-3">
                                     <Nav.Link href="/">Home</Nav.Link>
-                                    <Nav.Link href="/list">List</Nav.Link>
                                     <NavDropdown
-                                        title="Dropdown"
+                                        title="list"
                                         id={`offcanvasNavbarDropdown-expand-${expand}`}
                                     >
-                                        <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
+                                        <NavDropdown.Item href="/list">상품 전체보기</NavDropdown.Item>
                                         <NavDropdown.Item href="#action4">
                                             Another action
                                         </NavDropdown.Item>
@@ -42,6 +41,7 @@ function GlobalNav() {
                                             Something else here
                                         </NavDropdown.Item>
                                     </NavDropdown>
+                                    <Nav.Link href="#">Cart</Nav.Link>
                                 </Nav>
                                 <Button variant="outline-success" href='search'>Search</Button>
                             </Offcanvas.Body>

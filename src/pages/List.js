@@ -4,8 +4,8 @@ import ListCard from "./ListCard";
 
 function List() {
     const [list, setList] = useState([]);
-    const clientId = "yqsgNZqGoDM7ydJdAEvd";
-    const clientSecret = "hDwanueb2F";
+    const clientId = process.env.REACT_APP_CLIENT_ID;
+    const clientSecret = process.env.REACT_APP_CLIENT_SECRET;
 
     useEffect(() => {
         fetch(
