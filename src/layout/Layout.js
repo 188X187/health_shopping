@@ -5,7 +5,7 @@ import { Stack } from "react-bootstrap"
 import GlobalNav from "../components/common/GlobalNav"
 import Filter from "../components/search/Filter"
 import CartApple from "../components/cart_apple/CartApple"
-import Cart from "../pages/cart"
+import Cart from "../pages/Cart"
 import InfoPagesIdx from "../informations/InfoPagesIdx"
 
 function Layout() {
