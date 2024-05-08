@@ -8,10 +8,9 @@ function CartApple() {
 
 
     return (
+        <>
+        <h2>장바구니</h2>
         <div>
-            <button onClick={()=>{
-                dispatch(addItem({id:3}));
-            }}>TEST</button>
         <Table>
             <thead>
             <tr>
@@ -24,8 +23,8 @@ function CartApple() {
             <tbody>
             {state.item.map((a, i) => (
                 <tr key={i}>
-                    <td>{state.item[i].id}</td>
-                    <td>{state.item[i].name}</td>
+                    <td>{state.item[i].productId}</td>
+                    <td>{state.item[i].title}</td>
                     <td>{state.item[i].count}</td>
                     <td>
                         <button onClick={()=>{
@@ -44,6 +43,7 @@ function CartApple() {
             </tbody>
         </Table>
         </div>
+        </>
     );
 }
 
