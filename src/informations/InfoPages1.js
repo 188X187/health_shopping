@@ -1,19 +1,20 @@
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 
-function InfoPages() {
+function InfoPages(props) {
     return (
-        <Card style={{ width: '38rem' }}>
-            <Card.Img variant="top" src="https://flexible.img.hani.co.kr/flexible/normal/970/777/imgdb/resize/2019/0926/00501881_20190926.JPG" />
+        <Card style={{ width: '49rem', height: '45rem' }}>
+            <Card.Title className='p-3'>{props.title}</Card.Title>
             <Card.Body>
-                <Card.Title>Card Title</Card.Title>
-                <Card.Text>
-                    Some quick example text to build on the card title and make up the
-                    bulk of the card's content.
-                </Card.Text>
-                <Button variant="primary">Go somewhere</Button>
+                <Card.Img className='Infocardimg' variant="top" src={props.image} />
+                <Card.Text>{props.price}원</Card.Text>
+                <div className='d-flex'>
+                    <button className='w-50 border-0 p-3 mb-2 bg-success text-white'>구매</button>
+                    <button className='w-50 border-0 p-3 mb-2 bg-secondary text-white'>장바구니</button>
+                </div>
             </Card.Body>
         </Card>
+
     );
 }
 

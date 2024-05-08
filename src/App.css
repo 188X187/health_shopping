@@ -19,7 +19,9 @@
   padding: 5%;
   font-size: 18.5px;
 }
-
+.Infocardimg{
+  width: 30rem;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
