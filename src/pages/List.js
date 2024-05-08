@@ -9,7 +9,7 @@ function List(props) {
 
     useEffect(() => {
         fetch(
-            "/v1/search/shop?query=운동&filter=used:false&display=30&start=1"+props.checkbox, {
+            `/v1/search/shop?query=운동${props.item}&filter=used:false&display=30&start=1${props.checkbox}`, {
             method: "GET",
             headers: {
                 "X-Naver-Client-Id": clientId,
@@ -22,7 +22,7 @@ function List(props) {
                 console.log(json);
                 setList(json.items);
             });
-    }, [props.checkbox]);
+    }, [props]);
 
     return (
         <>
