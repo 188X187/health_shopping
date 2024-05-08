@@ -6,6 +6,7 @@ import GlobalNav from "../components/common/GlobalNav"
 import Filter from "../components/search/Filter"
 import CartApple from "../components/cart_apple/CartApple"
 import Cart from "../pages/cart"
+import InfoPagesIdx from "../informations/InfoPagesIdx"
 
 function Layout() {
     return (
@@ -19,6 +20,8 @@ function Layout() {
                         <Route path="search" element={<Searching />}></Route>
                         <Route path="filter" element={<Filter />}></Route>
                         <Route path="cart" element={<Cart />}></Route>
+                        <Route path="infoPages" element={<InfoPagesIdx />}></Route>
+
                     </Routes>
                 </BrowserRouter>
 
