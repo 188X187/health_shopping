@@ -1,7 +1,12 @@
 import { Button, Card } from "react-bootstrap";
+import { useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
+import { addItem } from "../store/itemSlice";
 
 function ListCard(props) {
+
+    let dispatch = useDispatch();
+
     return (
         <Card style={{ width: '16rem' }}>
             <Link to={props.link}>
@@ -13,7 +18,7 @@ function ListCard(props) {
                 <Card.Title>{props.title}</Card.Title>
                 <Card.Text>{props.price}원</Card.Text>
                 </Link>
-                <Button variant="primary">장바구니</Button>
+                <Button variant="primary" onClick={()=>{dispatch(addItem({title:"진짜냐"}))}}>장바구니</Button>
             </Card.Body>
         </Card>
     )
