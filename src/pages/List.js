@@ -30,6 +30,7 @@ function List(props) {
                 {list.map((item, index) => (
                     <Col key={index}>
                         <ListCard
+                            item={item}
                             link={item.link}
                             image={item.image}
                             title={item.title.replace(/[<b></b>]/g, '')}

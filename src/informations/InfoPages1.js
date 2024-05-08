@@ -1,5 +1,6 @@
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
+import { useLocation } from 'react-router';
 
 function InfoPages(props) {
     return (
