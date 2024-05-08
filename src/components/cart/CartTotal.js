@@ -9,14 +9,14 @@ const CartTotal = () => {
         </div>
 
         <div className={styles.pay_minus}>
-            <img src="" alt="minus" />
+            <img src="/images/icon-minus-line.svg" alt="minus" />
         </div>
         <div className={styles.sale}>
             <p className={styles.cart_product_sale}>상품 할인</p>
             <p className={styles.cart_product_sale_price}>0</p>
         </div>
         <div className={styles.pay_plus}>
-            <img src="" alt="plus" />
+            <img src="/images/icon-plus-line.svg" alt="plus" />
         </div>
 
         <div className={styles.delivery}>

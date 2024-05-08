@@ -9,7 +9,7 @@ let initialState = [
         category3: "없음",
         category4: "",
         hprice: 0,
-        image: "",
+        image: "/images/noexist.png",
         link: "",
         lprice: 0,
         maker: "",

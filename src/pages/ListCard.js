@@ -18,7 +18,13 @@ function ListCard(props) {
                 <Card.Title>{props.title}</Card.Title>
                 <Card.Text>{props.price}원</Card.Text>
                 </Link>
-                <Button variant="primary" onClick={()=>{dispatch(addItem({title:"진짜냐"}))}}>장바구니</Button>
+                <Button variant="primary" onClick={()=>{
+                    dispatch(addItem({
+                        title:props.title,
+                        image:props.image,
+                        link:props.link,
+                        lprice:props.price
+                        }))}}>장바구니</Button>
             </Card.Body>
         </Card>
     )
