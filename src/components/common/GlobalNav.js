@@ -29,7 +29,7 @@ function GlobalNav() {
                                 <Nav className="justify-content-end flex-grow-1 pe-3">
                                     <Nav.Link href="/">Home</Nav.Link>
                                     <Nav.Link href="/filter">List</Nav.Link>
-                                    <NavDropdown
+                                    {/* <NavDropdown
                                         title="list"
                                         id={`offcanvasNavbarDropdown-expand-${expand}`}
                                     >
@@ -41,7 +41,7 @@ function GlobalNav() {
                                         <NavDropdown.Item href="#action5">
                                             Something else here
                                         </NavDropdown.Item>
-                                    </NavDropdown>
+                                    </NavDropdown> */}
                                     <Nav.Link href="#">Cart</Nav.Link>
                                 </Nav>
                                 <Button variant="outline-success" href='search'>Search</Button>

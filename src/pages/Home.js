@@ -3,7 +3,6 @@ import List from './List';
 
 function Home() {
     return (
-        <>
             <Carousel>
                 <Carousel.Item>
                     <CarouselImage1 text="First slide" />
@@ -16,12 +15,6 @@ function Home() {
                 </Carousel.Item>
             </Carousel>
 
-            <Carousel>
-                <Carousel.Item>
-                    <List />
-                </Carousel.Item>
-            </Carousel>
-        </>
     )
 }
 
