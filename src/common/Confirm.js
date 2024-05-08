@@ -4,8 +4,8 @@ function Confirm() {
 
     const [data, setData] = useState(null);
 
-    const clientId = "Fnb6JtyPj7fsRmDtC5MP";
-    const clientSecret = "YPnCj6VCQy";
+    const clientId = process.env.REACT_APP_CLIENT_ID;
+    const clientSecret = process.env.REACT_APP_CLIENT_SECRET;
 
     useEffect(() => {
         fetch(

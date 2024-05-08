@@ -1,6 +1,6 @@
 import { Table } from "react-bootstrap";
 import { useDispatch, useSelector } from "react-redux";
-import { changeName } from "../../store";
+import { decrease, increase } from "../../store/itemSlice";
 
 function CartApple() {
     let state = useSelector((state) => state);
@@ -19,14 +19,19 @@ function CartApple() {
             </tr>
             </thead>
             <tbody>
-            {state.cart.map((a, i) => (
+            {state.item.map((a, i) => (
                 <tr key={i}>
-                    <td>1</td>
-                    <td>{state.cart[i].name}</td>
-                    <td>{state.cart[i].count}</td>
+                    <td>{state.item[i].id}</td>
+                    <td>{state.item[i].name}</td>
+                    <td>{state.item[i].count}</td>
                     <td>
                         <button onClick={()=>{
-                            dispatch(changeName())
+                            dispatch(decrease(i))
+                        }}>
+                            -
+                        </button>
+                        <button onClick={()=>{
+                            dispatch(increase(i))
                         }}>
                             +
                         </button>
