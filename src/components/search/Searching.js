@@ -20,9 +20,10 @@ function Searching() {
             <Form className="d-flex">
                 <Form.Control
                     type="search"
-                    placeholder="Search"
+                    placeholder="검색기능 커밍 쑨"
                     className="me-2"
                     aria-label="Search"
+                    readOnly
                     onChange={(e) => {
                         setSearchItem(e.target.value)
                     }}
@@ -42,7 +43,7 @@ function Searching() {
             </Form>
 
             {input == true ? <Searched searchText={searchText} searchItem={searchItem} /> : null}
-            <div className="p-2">Third item</div>
+            {/* <div className="p-2">Third item</div> */}
         </Stack>
     )
 }
