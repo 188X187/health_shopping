@@ -13,7 +13,7 @@ function GlobalNav() {
             {['md'].map((expand) => (
                 <Navbar key={expand} expand={expand} className="bg-body-tertiary mb-3">
                     <Container fluid>
-                        <Navbar.Brand href="#">Navbar Offcanvas</Navbar.Brand>
+                        <Navbar.Brand href="/">Navbar Offcanvas</Navbar.Brand>
                         <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
                         <Navbar.Offcanvas
                             id={`offcanvasNavbar-expand-${expand}`}
@@ -27,13 +27,13 @@ function GlobalNav() {
                             </Offcanvas.Header>
                             <Offcanvas.Body>
                                 <Nav className="justify-content-end flex-grow-1 pe-3">
-                                    <Nav.Link href="#action1">Home</Nav.Link>
-                                    <Nav.Link href="#action2">Link</Nav.Link>
-                                    <NavDropdown
-                                        title="Dropdown"
+                                    <Nav.Link href="/">Home</Nav.Link>
+                                    <Nav.Link href="/filter">List</Nav.Link>
+                                    {/* <NavDropdown
+                                        title="list"
                                         id={`offcanvasNavbarDropdown-expand-${expand}`}
                                     >
-                                        <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
+                                        <NavDropdown.Item href="/list">상품 전체보기</NavDropdown.Item>
                                         <NavDropdown.Item href="#action4">
                                             Another action
                                         </NavDropdown.Item>
@@ -41,7 +41,8 @@ function GlobalNav() {
                                         <NavDropdown.Item href="#action5">
                                             Something else here
                                         </NavDropdown.Item>
-                                    </NavDropdown>
+                                    </NavDropdown> */}
+                                    <Nav.Link href="/cart">Cart</Nav.Link>
                                 </Nav>
                                 <Button variant="outline-success" href='search'>Search</Button>
                             </Offcanvas.Body>

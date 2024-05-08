@@ -4,6 +4,22 @@
   margin: 0 auto;
 }
 
+.card a {
+  text-decoration: none;
+  color: black;
+}
+
+.card-title {
+  word-break: keep-all;
+  height: 6.5rem;
+}
+
+.card-text {
+  height: 3rem;
+  padding: 5%;
+  font-size: 18.5px;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
