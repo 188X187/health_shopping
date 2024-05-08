@@ -28,7 +28,7 @@ function GlobalNav() {
                             <Offcanvas.Body>
                                 <Nav className="justify-content-end flex-grow-1 pe-3">
                                     <Nav.Link href="/">Home</Nav.Link>
-                                    <Nav.Link href="/list">List</Nav.Link>
+                                    <Nav.Link href="/filter">List</Nav.Link>
                                     <NavDropdown
                                         title="Dropdown"
                                         id={`offcanvasNavbarDropdown-expand-${expand}`}

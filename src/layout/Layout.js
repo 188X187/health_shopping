@@ -3,7 +3,7 @@ import Home from '../pages/Home'
 import Searching from "../components/search/Searching"
 import { Stack } from "react-bootstrap"
 import GlobalNav from "../components/common/GlobalNav"
-import List from "../pages/List"
+import Filter from "../components/search/Filter"
 
 function Layout() {
     return (
@@ -15,7 +15,7 @@ function Layout() {
                     <Routes>
                         <Route index element={<Home />}></Route>
                         <Route path="search" element={<Searching />}></Route>
-                        <Route path="list" element={<List />}></Route>
+                        <Route path="filter" element={<Filter />}></Route>
 
                     </Routes>
                 </BrowserRouter>
