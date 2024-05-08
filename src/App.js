@@ -1,14 +1,14 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
-import List from './pages/List';
-import ListCard from './pages/ListCard';
+
 
 import Layout from './layout/Layout';
+import Cart from './pages/Cart';
 
 function App() {
   return (
     <div className="App">
-      <Layout />
+      <Cart />
     </div>
   );
 }

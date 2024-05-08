@@ -10,9 +10,9 @@ const CartList = ({ cart }) => {
             </div>
 
             <div className={styles.cart_product_info}>
-            <p className={styles.seller_store}>d</p>
-            <p className={styles.product_name}>a</p>
-            <p className={styles.price}>b</p>
+            <p className={styles.seller_store}>{cart.title}</p>
+            <p className={styles.product_name}>{cart.category1}</p>
+            <p className={styles.price}>{cart.lprice}</p>
             <p className={styles.delivery}>택배배송 / 무료배송</p>
             </div>
         </div>
