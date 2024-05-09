@@ -42,12 +42,9 @@ function Filter() {
                     type="checkbox"
                     onChange={(e) => {
                         if (e.target.checked) {
-                            let copy = item;
-                            copy = copy + "유기농"
-                            setItem(copy)
+                            setItem(item+"유기농")
                         } else {
-                            let copy = item.replace("유기농", "");
-                            setItem(copy)
+                            setItem(item.replace("유기농", ""))
                         }
                     }}>
                 </input>유기농
@@ -58,12 +55,9 @@ function Filter() {
                     type="checkbox"
                     onChange={(e) => {
                         if (e.target.checked) {
-                            let copy = item;
-                            copy = copy + "다이어트"
-                            setItem(copy)
+                            setItem(item+"다이어트")
                         } else {
-                            let copy = item.replace("다이어트", "");
-                            setItem(copy)
+                            setItem(item.replace("다이어트", ""))
                         }
                     }}>
                 </input>다이어트
@@ -74,60 +68,9 @@ function Filter() {
                     type="checkbox"
                     onChange={(e) => {
                         if (e.target.checked) {
-                            let copy = item;
-                            copy = copy + "게이너"
-                            setItem(copy)
+                            setItem(item+"에너지")
                         } else {
-                            let copy = item.replace("게이너", "");
-                            setItem(copy)
-                        }
-                    }}>
-                </input>게이너
-            </label>
-
-            <label>
-                <input
-                    type="checkbox"
-                    onChange={(e) => {
-                        if (e.target.checked) {
-                            let copy = item;
-                            copy = copy + "아미노산"
-                            setItem(copy)
-                        } else {
-                            let copy = item.replace("아미노산", "");
-                            setItem(copy)
-                        }
-                    }}>
-                </input>아미노산
-            </label>
-
-            <label>
-                <input
-                    type="checkbox"
-                    onChange={(e) => {
-                        if (e.target.checked) {
-                            let copy = item;
-                            copy = copy + "다이어트"
-                            setItem(copy)
-                        } else {
-                            let copy = item.replace("다이어트", "");
-                            setItem(copy)
-                        }
-                    }}>
-                </input>다이어트
-            </label>
-
-            <label>
-                <input
-                    type="checkbox"
-                    onChange={(e) => {
-                        if (e.target.checked) {
-                            let copy = item;
-                            copy = copy + "에너지"
-                            setItem(copy)
-                        } else {
-                            let copy = item.replace("에너지", "");
-                            setItem(copy)
+                            setItem(item.replace("에너지", ""))
                         }
                     }}>
                 </input>에너지
@@ -138,12 +81,9 @@ function Filter() {
                     type="checkbox"
                     onChange={(e) => {
                         if (e.target.checked) {
-                            let copy = item;
-                            copy = copy + "쉐이커"
-                            setItem(copy)
+                            setItem(item+"쉐이커")
                         } else {
-                            let copy = item.replace("쉐이커", "");
-                            setItem(copy)
+                            setItem(item.replace("쉐이커", ""))
                         }
                     }}>
                 </input>쉐이커
@@ -154,12 +94,9 @@ function Filter() {
                     type="checkbox"
                     onChange={(e) => {
                         if (e.target.checked) {
-                            let copy = item;
-                            copy = copy + "헬스용품"
-                            setItem(copy)
+                            setItem(item+"헬스용품")
                         } else {
-                            let copy = item.replace("헬스용품", "");
-                            setItem(copy)
+                            setItem(item.replace("헬스용품", ""))
                         }
                     }}>
                 </input>헬스용품
