@@ -9,26 +9,26 @@ function ListCard(props) {
 
     return (
         <Card style={{ width: '16rem' }}>
-            <Link to="/infoPages" state={{item: props.item}}>
-            <Card.Img variant="top" src={props.image} style={{ height: '15rem' }} />
+            <Link to="/infoPages" state={{ item: props.item }}>
+                <Card.Img variant="top" src={props.image} style={{ height: '15rem' }} />
             </Link>
             <Card.Body>
-                <Link to='/infoPages' state={{item: props.item}}>
-                <Card.Title>{props.title}</Card.Title>
+                <Link to='/infoPages' state={{ item: props.item }}>
+                    <Card.Title>{props.title}</Card.Title>
                 </Link>
-                    </Card.Body>
+            </Card.Body>
 
-                <ListGroup className="list-group-flush">
-                    <ListGroup.Item>{props.price}원</ListGroup.Item>
-                <ListGroup.Item variant="success" onClick={()=>{
+            <ListGroup className="list-group-flush">
+                <ListGroup.Item>{props.price}원</ListGroup.Item>
+                <ListGroup.Item variant="success" onClick={() => {
                     dispatch(addItem({
-                        title:props.title,
-                        image:props.image,
-                        link:props.link,
-                        lprice:props.price
-                        }))
-                        alert('장바구니에 담겼습니다')}}>장바구니</ListGroup.Item>
-                </ListGroup>
+                        title: props.title,
+                        image: props.image,
+                        link: props.link,
+                        lprice: props.price
+                    }))
+                }}>장바구니</ListGroup.Item>
+            </ListGroup>
         </Card>
     )
 }
