@@ -9,16 +9,11 @@
   color: black;
 }
 
-.card-title {
+.card-body {
   word-break: keep-all;
-  height: 6.5rem;
+  height: 9.5rem;
 }
 
-.card-text {
-  height: 3rem;
-  padding: 5%;
-  font-size: 18.5px;
-}
 .Infocardimg{
   width: 30rem;
 }
